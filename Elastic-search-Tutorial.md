@@ -13,3 +13,7 @@
 		
 	3-To Delete a data 
 		curl -X DELETE http://Elastic-Search-IP:9200/logs/my_app/ID
+
+
+## Refrences
+	* https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
