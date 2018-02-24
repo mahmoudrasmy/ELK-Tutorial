@@ -4,7 +4,7 @@
 1-follow this tutorial to install the ELK stack on a container 
    https://github.com/mahmoudrasmy/docker/blob/master/ELK-Container.md
 
-## Basic Elastic search API calling
+## Basic CRUD operations on Elastic Search using API calling
 	1-To add data in the Elastic Search use or indexe data :
 		curl -X POST http://Elastic-Search-IP:9200/logs/my_app -H 'Content-Type: application/json' -d '{"timestamp": "2015-01-18 12:34:56", "message": "User logged in", "user_id": 4, "admin": false}'
 	
