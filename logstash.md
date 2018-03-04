@@ -27,3 +27,22 @@ output {
 6- cd /opt/logstash/bin <br>
 7- Execute this command $./logstash --path.config logstash.conf --path.data /opt/logstash/logs/ <br>
 8- Check the outlog.log file, you will find the content of the inlog.log inside the outlog.log file.
+
+
+# Adding Filter on Logging DATA
+1- ADD this configuration in the logstash.conf
+```
+input {
+   stdin { }
+}
+filter {
+   grok {
+      match => {"message" => "%{WORD:verb} %{URIPATHPARAM:uri}"}
+   }
+}
+output {
+   file {
+      path => "/opt/logstash/logs/outlog.log"
+   }
+}
+```
