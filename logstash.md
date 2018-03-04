@@ -6,7 +6,8 @@
 1- change directory $cd /opt/logstash/bin.<br>
 2- create a configuration file and rename it to logstash.conf.<br>
 3- Add the following content to the file <br>
-    input {
+  ```
+  input {
    file {
       path => "/opt/logstash/logs/inlog.log"
    }
@@ -16,7 +17,7 @@ output {
       path => "/opt/logstash/logs/outlog.log"
    }
 }
-
+```
 4- create this 2 files inlog.log and outlog.log <br>
 5- execute the chmod command for the 2 files, inlog.log and outlog.log <br>
 6- cd /opt/logstash/bin <br>
