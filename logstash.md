@@ -20,7 +20,7 @@ output {
 ```
  - To pass the command directly from the cLI 
  ```
- ./logstash -e 'input { stdin { } } output { file { path => "/opt/logstash/logs/outlog.log"} }' --path.data /opt/logstash/bin/log/
+ ./logstash -e 'input { stdin { } } output { file { path => "/opt/logstash/logs/outlog.log"} }' --path.data /opt/logstash/logs/
  ```
 4- create this 2 files inlog.log and outlog.log <br>
 5- execute the chmod command for the 2 files, inlog.log and outlog.log <br>
