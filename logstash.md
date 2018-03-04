@@ -3,9 +3,9 @@
 
 
 # Create a simple logstash scnario by copying input from a file to another output file 
-1- change directory $cd /opt/logstash/bin.
-2- create a configuration file and rename it to logstash.conf.
-3- Add the following content to the file 
+1- change directory $cd /opt/logstash/bin.<br>
+2- create a configuration file and rename it to logstash.conf.<br>
+3- Add the following content to the file <br>
     input {
    file {
       path => "/opt/logstash/logs/inlog.log"
@@ -17,8 +17,8 @@ output {
    }
 }
 
-4- create this 2 files inlog.log and outlog.log
-5- execute the chmod command for the 2 files, inlog.log and outlog.log
-6- cd /opt/logstash/bin
-7- Execute this command $./logstash --path.config logstash.conf --path.data /opt/logstash/logs/
+4- create this 2 files inlog.log and outlog.log <br>
+5- execute the chmod command for the 2 files, inlog.log and outlog.log <br>
+6- cd /opt/logstash/bin <br>
+7- Execute this command $./logstash --path.config logstash.conf --path.data /opt/logstash/logs/ <br>
 8- Check the outlog.log file, you will find the content of the inlog.log inside the outlog.log file.
