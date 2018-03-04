@@ -3,8 +3,8 @@
 
 
 # Create a simple logstash scnario by copying input from a file to another output file 
-1- change directory $cd /opt/logstash/bin
-2- create a configuration file and rename it to logstash.conf 
+1- change directory $cd /opt/logstash/bin.
+2- create a configuration file and rename it to logstash.conf.
 3- Add the following content to the file 
     input {
    file {
